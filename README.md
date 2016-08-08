@@ -33,3 +33,6 @@ RaidenFTPD Logging Content Pack for Graylog
         Exec $short_message = $raw_event; # Avoids truncation of the short_message field.
         Exec $Hostname = hostname_fqdn();
     </Output>
+
+## Screenshots
+![Dashboard](https://lh5.googleusercontent.com/J7OlNAwLqjmT5oiqyhMsUaUdUEK3UFEgx02Mx2y3susP9RRYNUMsUyOSO9jkRmIHbPgxoSUda_bwYsw=w1750-h1343)
