@@ -35,4 +35,4 @@ RaidenFTPD Logging Content Pack for Graylog
     </Output>
 
 ## Screenshots
-![Dashboard](https://lh5.googleusercontent.com/J7OlNAwLqjmT5oiqyhMsUaUdUEK3UFEgx02Mx2y3susP9RRYNUMsUyOSO9jkRmIHbPgxoSUda_bwYsw=w1750-h1343)
+![Dashboard](https://cloud.githubusercontent.com/assets/813996/17567464/c811b5bc-5f3f-11e6-8b15-7295f109bc44.jpg)
