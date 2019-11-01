@@ -14,25 +14,25 @@ RaidenFTPD Logging Content Pack for Graylog
 
 #### Example of a working NXlog.conf file input/output configuration (using Collector Sidecar):
 ```
-    <Input in_raidenftpd>
-        Module im_file
-        File "C:\RaidenServer\RaidenFTPD\Log\utf8-pippin-*.log"
-        PollInterval 1
-        SavePos True
-        ReadFromLast True
-        Recursive False
-        RenameCheck True
-        Exec $FileName = file_name(); # Send file name with each message
-    </Input>
+<Input in_raidenftpd>
+    Module im_file
+    File "C:\RaidenServer\RaidenFTPD\Log\utf8-pippin-*.log"
+    PollInterval 1
+    SavePos True
+    ReadFromLast True
+    Recursive False
+    RenameCheck True
+    Exec $FileName = file_name(); # Send file name with each message
+</Input>
 
-    <Output out_raidenftpd>
-        Module om_udp
-        Host 10.0.0.14
-        Port 5443
-        OutputType  GELF
-        Exec $short_message = $raw_event; # Avoids truncation of the short_message field.
-        Exec $Hostname = hostname_fqdn();
-    </Output>
+<Output out_raidenftpd>
+    Module om_udp
+    Host 10.0.0.14
+    Port 5443
+    OutputType  GELF
+    Exec $short_message = $raw_event; # Avoids truncation of the short_message field.
+    Exec $Hostname = hostname_fqdn();
+</Output>
 ```
 
 ## Screenshots
